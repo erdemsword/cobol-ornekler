@@ -1,7 +1,7 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. tahmin.
        AUTHOR. Erdem.
-       DATE-WRITTEN. 05 Mayis.
+       DATE-WRITTEN. 04 Mayis.
        ENVIRONMENT DIVISION.
 
        DATA DIVISION.
