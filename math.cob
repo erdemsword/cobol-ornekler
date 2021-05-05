@@ -1,0 +1,26 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. MATH.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 NUMBER-ONE PIC 9(2).
+       01 NUMBER-TWO PIC 9(2).
+       01 RESULT PIC 9(2).
+       PROCEDURE DIVISION.
+           DISPLAY "Birinci sayiyi giriniz : "
+           ACCEPT NUMBER-ONE
+           DISPLAY "Ikinci sayiyi giriniz : "
+           ACCEPT NUMBER-TWO
+
+           ADD NUMBER-ONE, NUMBER-TWO TO RESULT
+           DISPLAY "TOPLAMA sonuc : " RESULT
+
+           SUBTRACT NUMBER-ONE FROM NUMBER-TWO GIVING RESULT
+           DISPLAY "CIKARMA sonuc : " RESULT
+
+           MULTIPLY NUMBER-ONE BY NUMBER-TWO GIVING RESULT
+           DISPLAY "CARPMA sonuc : " RESULT
+
+           DIVIDE NUMBER-ONE BY NUMBER-TWO GIVING RESULT
+           DISPLAY "BOLME sonuc : " RESULT
+       STOP RUN.
+       
