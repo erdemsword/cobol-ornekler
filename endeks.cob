@@ -25,6 +25,7 @@
            DISPLAY "Kilonuzu giriniz : ".
            ACCEPT KILO.
            
+      
            MOVE FUNCTION UPPER-CASE (AD) TO AD
            MOVE FUNCTION UPPER-CASE (SOYAD) TO SOYAD
            MOVE FUNCTION UPPER-CASE (CINSIYET) TO CINSIYET
