@@ -29,7 +29,7 @@
            DISPLAY "-----------------------"
            COMPUTE WS-PERFORM = WS-END - WS-START
            PERFORM WS-PERFORM TIMES
-               COMPUTE WS-START = (WS-START) + 1
+               ADD 1 TO WS-START
                IF WS-START EQUAL TO WS-TARGET THEN
                    DISPLAY WS-START " - hedef sayi"
                ELSE
