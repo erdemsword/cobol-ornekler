@@ -1,7 +1,7 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. OY.
        AUTHOR. Erdem.
-       DATE-WRITTEN. 7 Nisan.
+       DATE-WRITTEN. 7 Mayis.
        ENVIRONMENT DIVISION.
        DATA DIVISION.
        FILE SECTION.
