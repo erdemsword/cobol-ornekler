@@ -11,7 +11,7 @@
        01 oy_telefon_no PIC 9(10).
        01 oy_sms_kod PIC 9(4).
        01 oy_input PIC X(30).
-       *>ORNEK DATA
+
        01 vatandas_bilgileri.
            02 vatandas_ad_soyad PIC X(50) VALUE "Erdem KILIC".
            02 vatandas_kimlik_no PIC 9(11) VALUE 21521454122.
@@ -43,7 +43,6 @@
        ACCEPT oy_telefon_no.
        IF oy_telefon_no = vatandas_telefon_no THEN
            DISPLAY "Cep telefonuna kod gonderildi"
-           *> SMS KODU API FONKSIYONU
        ELSE
            DISPLAY "Telefon numarasi eslesemedi ana menuye donuluyor"
            STOP RUN
