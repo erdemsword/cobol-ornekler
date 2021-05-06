@@ -1,7 +1,7 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. tahmin.
        AUTHOR. Erdem.
-       DATE-WRITTEN. 04 Mayis.
+       DATE-WRITTEN. 12 Nisan.
        ENVIRONMENT DIVISION.
 
        DATA DIVISION.
@@ -9,21 +9,16 @@
        WORKING-STORAGE SECTION.
        01 tahmin_min PIC 9(1) VALUE 1.
        01 tahmin_max PIC 9(1) VALUE 9.
-       01 tahmin_sayi PIC 9(1).
+       01 tahmin_sayi PIC 9(1) VALUE 4.
        01 tahmin_kalan PIC 9(1) VALUE 3.
        01 tahmin_sayi_input PIC 9(1).
        PROCEDURE DIVISION.
 
-           RANDOM-NUMBER.
-           PERFORM 9 TIMES
-               COMPUTE tahmin_sayi = FUNCTION RANDOM() *
-                       (tahmin_max - tahmin_min + 1) + tahmin_min
-               DISPLAY "RASTGELE SAYI = " tahmin_sayi
-           END-PERFORM.
-
            FIRST-CODE.
-           PERFORM SECOND-CODE WITH TEST AFTER UNTIL tahmin_kalan < 1.
-           STOP RUN.
+           PERFORM SECOND-CODE UNTIL tahmin_kalan < 1
+               DISPLAY tahmin_kalan
+               STOP RUN.
+        
 
            SECOND-CODE.
            DISPLAY "--------------------".
