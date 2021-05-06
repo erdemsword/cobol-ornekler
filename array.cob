@@ -19,12 +19,13 @@
                DISPLAY 
                "Baslangic sayisi bitis sayisindan buyuk olmamali"
                STOP RUN
-           END-IF.
+           ELSE
            IF WS-TARGET IS GREATER WS-END OR NOT GREATER WS-START THEN
                DISPLAY 
                "Hedef sayi baslangic sayi ila bitis sayi arasnda olmali"
                STOP RUN
            END-IF.
+           
            DISPLAY "-----------------------"
            COMPUTE WS-PERFORM = WS-END - WS-START
            PERFORM WS-PERFORM TIMES
